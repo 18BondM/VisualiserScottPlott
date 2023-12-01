@@ -38,13 +38,14 @@
             exitToolStripMenuItem = new ToolStripMenuItem();
             contextMenuStrip1 = new ContextMenuStrip(components);
             tableLayoutPanel1 = new TableLayoutPanel();
+            toolStripStatusLabel2 = new ToolStripStatusLabel();
             statusStrip1.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // statusStrip1
             // 
-            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabel2 });
             statusStrip1.Location = new Point(0, 428);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Size = new Size(892, 22);
@@ -54,8 +55,8 @@
             // toolStripStatusLabel1
             // 
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(154, 17);
-            toolStripStatusLabel1.Text = "Click plot to display a graph";
+            toolStripStatusLabel1.Size = new Size(193, 17);
+            toolStripStatusLabel1.Text = "Click File, import to display a graph";
             // 
             // menuStrip1
             // 
@@ -112,6 +113,12 @@
             tableLayoutPanel1.Size = new Size(892, 404);
             tableLayoutPanel1.TabIndex = 5;
             // 
+            // toolStripStatusLabel2
+            // 
+            toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            toolStripStatusLabel2.Size = new Size(96, 17);
+            toolStripStatusLabel2.Text = "Monty Bond-Fell";
+            // 
             // Visualiser
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -142,5 +149,6 @@
         private ToolStripMenuItem exportToolStripMenuItem;
         private ContextMenuStrip contextMenuStrip1;
         private TableLayoutPanel tableLayoutPanel1;
+        private ToolStripStatusLabel toolStripStatusLabel2;
     }
 }
